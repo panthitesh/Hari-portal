@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance History</title>
+<style>
+
+body{
+
+background:#0f172a;
+
+color:white;
+
+font-family:system-ui;
+
+}
+
+.card{
+
+background:#111827;
+
+margin:20px;
+
+padding:20px;
+
+border-radius:12px;
+
+}
+
+.row{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:10px;
+
+border-bottom:1px solid #1f2937;
+
+}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>Attendance History</h2>
+<div id="logs"></div>
+</div>
+<script>
+
+fetch("/attendance-data")
+
+.then(res=>res.json())
+
+.then(data=>{
+
+let html=""
+
+data.forEach(a=>{
+
+html+=`<div class="row">
+<span>${a.date}</span>
+<span>${a.time}</span>
+</div>`
+
+})
+
+document.getElementById("logs").innerHTML=html
+
+})
+</script>
+</body>
+</html>
+ 

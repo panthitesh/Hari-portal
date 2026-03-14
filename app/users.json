@@ -1,0 +1,22 @@
+[
+ {
+   "id": "EMP001",
+   "name": "Rahul Sharma",
+   "password": "123"
+ },
+ {
+   "id": "EMP002",
+   "name": "Aman Verma",
+   "password": "123"
+ },
+ {
+   "id": "EMP003",
+   "name": "Priya Singh",
+   "password": "123"
+ },
+ {
+   "id": "EMP004",
+   "name": "Rohit Kumar",
+   "password": "123"
+ }
+]
